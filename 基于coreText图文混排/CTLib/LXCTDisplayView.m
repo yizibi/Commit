@@ -8,6 +8,7 @@
 
 #import "LXCTDisplayView.h"
 #import "LXCTTextData.h"
+#import "LXCTImageData.h"
 
 
 @interface LXCTDisplayView()
@@ -31,6 +32,13 @@
     
     if (self.data) {
         CTFrameDraw(self.data.ct_Frame, context);
+    }
+    //图像绘制
+    for (LXCTImageData *imageData in self.data.imageArray) {
+        UIImage *image = [UIImage imageNamed:imageData.name];
+        if (image) {
+            CGContextDrawImage(context, imageData.imagePosition, image.CGImage);
+        }
     }
     
 }

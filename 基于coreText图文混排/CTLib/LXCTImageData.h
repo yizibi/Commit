@@ -10,11 +10,12 @@
 
 @interface LXCTImageData : NSObject
 
-/** name */
+/** 图片名 */
 @property (nonatomic, copy) NSString *name;
-/** 未知 */
+/** 位置 */
 @property (nonatomic, assign) NSInteger position;
 
 /** 坐标,此处是CoreText左边,而不是UIKit坐标 */
 @property (nonatomic, assign) CGRect imagePosition;
+
 @end

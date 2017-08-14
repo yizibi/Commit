@@ -21,22 +21,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTQ-uQ-f58" userLabel="titleView" customClass="LXCTDisplayView">
-                                <rect key="frame" x="67" y="0.0" width="233" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5B-2D-85o" customClass="LXCTDisplayView">
-                                <rect key="frame" x="16" y="89" width="343" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-1b-d3o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5B-2D-85o" customClass="LXCTDisplayView">
+                                        <rect key="frame" x="16" y="20" width="343" height="626"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="l5B-2D-85o" firstAttribute="top" secondItem="fKg-1b-d3o" secondAttribute="top" constant="20" id="PLX-2r-I1Y"/>
+                                    <constraint firstItem="l5B-2D-85o" firstAttribute="leading" secondItem="fKg-1b-d3o" secondAttribute="leading" constant="16" id="bSB-sf-0jB"/>
+                                    <constraint firstItem="l5B-2D-85o" firstAttribute="centerX" secondItem="fKg-1b-d3o" secondAttribute="centerX" id="fZ3-e6-m6G"/>
+                                    <constraint firstAttribute="trailing" secondItem="l5B-2D-85o" secondAttribute="trailing" constant="16" id="hbb-Gw-r7w"/>
+                                    <constraint firstItem="l5B-2D-85o" firstAttribute="centerY" secondItem="fKg-1b-d3o" secondAttribute="centerY" id="kxp-QL-PiY"/>
+                                    <constraint firstAttribute="bottom" secondItem="l5B-2D-85o" secondAttribute="bottom" id="zz5-Su-IZ1"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fKg-1b-d3o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NXy-6y-i8b"/>
+                            <constraint firstAttribute="trailing" secondItem="fKg-1b-d3o" secondAttribute="trailing" id="ex9-57-Q6W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fKg-1b-d3o" secondAttribute="bottom" id="fI1-tM-bnc"/>
+                            <constraint firstItem="fKg-1b-d3o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="w9y-Be-hFu"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ctView" destination="l5B-2D-85o" id="AF2-oW-rz6"/>
-                        <outlet property="titleView" destination="NTQ-uQ-f58" id="JjZ-Tn-JNV"/>
+                        <outlet property="scrollView" destination="fKg-1b-d3o" id="HoQ-Xn-Br4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

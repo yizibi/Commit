@@ -13,6 +13,7 @@
 #import "LXCTFrameSeting.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet LXCTDisplayView *titleView;
 
 @property (weak, nonatomic) IBOutlet LXCTDisplayView *ctView;

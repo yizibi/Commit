@@ -14,11 +14,11 @@
 
 ### 排版引擎基本结构
 
-![](http://o9zpq25pv.bkt.clouddn.com/blog/coreText/coreTextDemoStructre.png?imageMogr2/thumbnail/500x)
+![](http://o9zpq25pv.bkt.clouddn.com/blog/coreText/coreTextDemoStructre.png?imageMogr2/quality/50)
 
 ### 目前实现功能:
 
 * 支持图片文字混排;如下图:
 
-![](http://o9zpq25pv.bkt.clouddn.com/Snip20170814_89.png?imageMogr2/thumbnail/500x)
+![](http://o9zpq25pv.bkt.clouddn.com/Snip20170814_89.png?imageMogr2/quality/50)
 

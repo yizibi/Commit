@@ -1,0 +1,33 @@
+
+[
+ {"type":"img",
+  "width":350,
+  "height":160,
+  "name":"coretext-image-1.jpg"
+ },
+ {"color":"blue",
+  "content":"吃的苦中苦,方为人上人",
+  "size":16,
+  "type":"txt"
+ },
+ {"color":"red",
+ "content":"颜色,我是你的朋友",
+ "size":22,
+ "type":"txt"
+ },
+ {"type":"img",
+ "width":40,
+ "height":40,
+ "name":"coretext-image-2.jpg"
+ },
+ {"color":"black",
+ "content":"大小等信息",
+ "size":16,
+ "type":"txt"
+ },
+ {"color":"default",
+ "content":"生命中,总有些人,让你过目不忘,让你难以释怀;\n生活中,总有那么一个瞬间,让你怦然心动!\n,也许,对你来说,没有什么,但是在乎你的人,总是那么在乎,所以,别看,学习,别玩游戏,说你呢",
+ "type":"txt"
+ }
+  
+ ]

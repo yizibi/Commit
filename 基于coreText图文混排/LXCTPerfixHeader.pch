@@ -1,0 +1,33 @@
+
+
+//
+//  LXCTPerfixHeader.pch
+//  基于coreText图文混排
+//
+//  Created by hspcadmin on 2017/8/10.
+//  Copyright © 2017年 hspcadmin. All rights reserved.
+//
+
+#ifndef LXCTPerfixHeader_pch
+#define LXCTPerfixHeader_pch
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <CoreText/CoreText.h>
+#import "UIView+LXFrame.h"
+#endif
+
+
+/*** 颜色 ***/
+#define LXColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define LXColor(r, g, b) LXColorA((r), (g), (b), 255)
+#define LXRandomColor LXColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define LXrayColor(v) LXColor((v), (v), (v))
+#define LXCommonBgColor LXrayColor(223)
+#define LXColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+
+
+#endif /* LXCTPerfixHeader_pch */

@@ -12,6 +12,9 @@
 * 支持文本超链接;
 
 
+### 排版引擎基本结构
+
+![](http://o9zpq25pv.bkt.clouddn.com/blog/coreText/coreTextDemoStructre.png)
 
 ### 目前实现功能:
 
